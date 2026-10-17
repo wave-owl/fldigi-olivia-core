@@ -394,7 +394,9 @@ of wave-owl's archived change `fix-psk-rtty-vs-fldigi`, `bench/BUILD.md`):
   (the out-of-array read) occurred; there the sent text comes out with the same number of
   errors as in fldigi (one case: 22 vs 20 edits in a 2000 Hz Contestia burst at -10 dB that
   neither decodes). On other platforms (other libm, no FMA) the test requires the same
-  decode quality instead of identical bytes.
+  decode quality instead of identical bytes; on Ubuntu x86-64 (GitHub CI) the stored TX
+  vectors still match with 0 LSB, 87 of 117 decodes are byte-identical and all others have
+  the same text errors as fldigi's (the differences are in the garbage around the bursts).
 
   The reference build is macOS on arm64 with clang's default floating-point contraction
   (`-ffp-contract=on`) and `-O2`/`-O3`, i.e. how fldigi itself was built for the bench; the

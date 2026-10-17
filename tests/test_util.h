@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-static int failures;
+static int failures __attribute__((unused));
 
 #define CHECK(cond, ...)                                                                 \
     do {                                                                                 \
