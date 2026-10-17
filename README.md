@@ -141,9 +141,11 @@ samples (`olivia.cxx:522-524`). `tone_bw` is fldigi's modem bandwidth
 `Bandwidth - Bandwidth / Tones` in integer arithmetic (`olivia.cxx:379`,
 `modem.cxx:361-365`), so the tones sit on the outermost carriers (1281 / 1719 Hz for 8/500).
 
-**Over length**: `2 x 8192` tone samples, `ceil((characters + 1) / BitsPerSymbol)` blocks of
-`SymbolsPerBlock x SymbolSepar` samples (the `+1` is fldigi's leading NUL), the last
-half-symbol, and for Olivia 512 samples of silence.
+**Over length** (text queued before the first render): `2 x 8192` tone samples,
+`1 + ceil((characters - 1) / BitsPerSymbol)` FEC blocks of `SymbolsPerBlock x SymbolSepar`
+samples (the first block carries fldigi's leading NUL and one character, with 2 tones only the
+NUL, `olivia.cxx:176-206`), the last half symbol, and for Olivia 512 samples of silence.
+OLIVIA 8/500 with 22 characters: 16384 + 8 x 8192 + 128 + 512 = 82560 samples, as fldigi.
 
 ## Submodes
 
