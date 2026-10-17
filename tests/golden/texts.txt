@@ -1,0 +1,2 @@
+cq CQ CQ DE DG6FL DG6FL K
+pangram the quick brown fox jumps over the lazy dog 0123456789 <test?> 73

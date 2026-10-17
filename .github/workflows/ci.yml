@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: dsp/ pin check
+        run: make check-dsp
+      - name: Build
+        run: make
+      - name: Test (unit tests and fldigi goldens)
+        run: make test
+      - name: Test (ASan + UBSan)
+        run: make sanitize
+      - name: Benchmark
+        run: make bench
