@@ -299,6 +299,7 @@ typedef struct mfsk_demod {
 
 static void demod_free(mfsk_demod *d)
 {
+    /* MFSK_Demodulator::Free, pj_mfsk.h:768-778 */
     free(d->inp_tap);
     free(d->symbol_shape);
     free(d->fft_buff);

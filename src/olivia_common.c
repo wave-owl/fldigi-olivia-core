@@ -239,6 +239,7 @@ size_t mfsk_rateconv_process(mfsk_rateconv *c, const double *input, size_t input
 
 int mfsk_fifo_init(mfsk_fifo *f, size_t len)
 {
+    /* FIFO::Preset, pj_fifo.h:33-39 */
     f->len = len;
     f->data = (uint8_t *)calloc(len, 1);
     f->read_ptr = f->write_ptr = 0;
@@ -247,6 +248,7 @@ int mfsk_fifo_init(mfsk_fifo *f, size_t len)
 
 void mfsk_fifo_free(mfsk_fifo *f)
 {
+    /* FIFO::Free, pj_fifo.h:24 */
     free(f->data);
     f->data = NULL;
     f->len = 0;
@@ -254,11 +256,13 @@ void mfsk_fifo_free(mfsk_fifo *f)
 
 void mfsk_fifo_reset(mfsk_fifo *f)
 {
+    /* FIFO::Reset, pj_fifo.h:26-28 */
     f->read_ptr = f->write_ptr = 0;
 }
 
 static void fifo_incr(const mfsk_fifo *f, size_t *ptr)
 {
+    /* FIFO::IncrPtr, pj_fifo.h:42-46 */
     *ptr += 1;
     if (*ptr >= f->len)
         *ptr -= f->len;
