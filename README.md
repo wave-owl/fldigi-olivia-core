@@ -471,3 +471,12 @@ GPL-3.0-or-later, as fldigi. The MFSK engine is by Pawel Jalocha SP9VRC (2004); 
 modems are by Dave Freese W1HKJ and the fldigi developers, adapted from gMFSK by Tomi
 Manninen OH2BNS. C port, goldens and tests: Gerolf Ziegenhain DG6FL, 2026. See
 `CHANGELOG.md`.
+
+<!-- wave-owl-source-sbom-docs:start -->
+## Source SBOMs
+
+Every published release, including prereleases, receives automatically generated
+CycloneDX JSON and readable documentation. See the [initial source report](SBOM.md),
+[CycloneDX JSON](SBOM.cdx.json) and [release policy](SBOM-POLICY.md) for scope,
+release assets, provenance declarations and reproduction instructions.
+<!-- wave-owl-source-sbom-docs:end -->

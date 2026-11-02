@@ -1,0 +1,389 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "7561d461b00ff11d",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d01ca29bef124e0a8d66e9218953dfe8639cdcae"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b7d316c4b006e55ed66569cf8daa75a663aa0189c7816ee9acbbb2719f03830a"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/fldigi-olivia-core/.source-input/.github/workflows/ci.yml",
+      "type": "file"
+    },
+    {
+      "bom-ref": "9c8a102daa0da910",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bf8cc6a6368c6fb5a48d180f81588dd8b79a1774"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0a5a07a517c90bf8316c97c55c5662c8cb2175ea3f8d1a63b9c424a69a4b6d3b"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/fldigi-olivia-core/.source-input/dsp/.github/workflows/ci.yml",
+      "type": "file"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/fldigi-dsp-core@c4e206322be599f497148afdd9b450ef7b795564",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/fldigi-dsp-core/tree/c4e206322be599f497148afdd9b450ef7b795564"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/fldigi-dsp-core",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "gitlink"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "c4e206322be599f497148afdd9b450ef7b795564"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "46b39238dbaf3ec48c428d92b3623f4520dc61be"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/fldigi-dsp-core"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "type": "library",
+      "version": "c4e206322be599f497148afdd9b450ef7b795564"
+    },
+    {
+      "bom-ref": "pkg:github/actions/checkout@v4?package-id=33a8b75b56e25f47",
+      "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+      "name": "actions/checkout",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/dsp/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/checkout@v4",
+      "type": "library",
+      "version": "v4"
+    },
+    {
+      "bom-ref": "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3",
+      "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+      "name": "actions/checkout",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/checkout@v4",
+      "type": "library",
+      "version": "v4"
+    },
+    {
+      "bom-ref": "vendored:src/olivia_common.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/fldigi/tree/e7c3ab3709ad62a7d91829364eb48a05fa325c0d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/olivia_common.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}, {\"path\": \"README.md\", \"sha256\": \"d416ab87674abf57204491125667c7a0ff57cae1e2420761b6a9bc7a18d156d3\"}, {\"path\": \"src/olivia_common.c\", \"sha256\": \"a3d9009a38cbc3e234c60e63291f0115c9cbfc7c7fde580a01a9626403214b32\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d"
+    },
+    {
+      "bom-ref": "vendored:src/olivia_rx.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/fldigi/tree/e7c3ab3709ad62a7d91829364eb48a05fa325c0d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/olivia_rx.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}, {\"path\": \"README.md\", \"sha256\": \"d416ab87674abf57204491125667c7a0ff57cae1e2420761b6a9bc7a18d156d3\"}, {\"path\": \"src/olivia_rx.c\", \"sha256\": \"da4f021e64f214cb5baf963fefba9a77a557b0c6b224076aa8fab199c5335754\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d"
+    },
+    {
+      "bom-ref": "vendored:src/olivia_tx.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/fldigi/tree/e7c3ab3709ad62a7d91829364eb48a05fa325c0d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/olivia_tx.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}, {\"path\": \"README.md\", \"sha256\": \"d416ab87674abf57204491125667c7a0ff57cae1e2420761b6a9bc7a18d156d3\"}, {\"path\": \"src/olivia_tx.c\", \"sha256\": \"f74f7bfcf29a79ad170c6e39cb83d7ba17f3b053f759a73dbe20df443ac08a04\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "unknown",
+      "assemblies": [
+        "git:https://github.com/wave-owl/fldigi-olivia-core@9e6c5253466fbed5345a561e5b7c7c46aa622aa8"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [],
+      "ref": "7561d461b00ff11d"
+    },
+    {
+      "dependsOn": [],
+      "ref": "9c8a102daa0da910"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/fldigi-dsp-core@c4e206322be599f497148afdd9b450ef7b795564"
+    },
+    {
+      "dependsOn": [
+        "7561d461b00ff11d",
+        "9c8a102daa0da910",
+        "git:https://github.com/wave-owl/fldigi-dsp-core@c4e206322be599f497148afdd9b450ef7b795564",
+        "pkg:github/actions/checkout@v4?package-id=33a8b75b56e25f47",
+        "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3",
+        "vendored:src/olivia_common.c",
+        "vendored:src/olivia_rx.c",
+        "vendored:src/olivia_tx.c"
+      ],
+      "ref": "git:https://github.com/wave-owl/fldigi-olivia-core@9e6c5253466fbed5345a561e5b7c7c46aa622aa8"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/checkout@v4?package-id=33a8b75b56e25f47"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/olivia_common.c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/olivia_rx.c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/olivia_tx.c"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "git:https://github.com/wave-owl/fldigi-olivia-core@9e6c5253466fbed5345a561e5b7c7c46aa622aa8",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/fldigi-olivia-core/tree/9e6c5253466fbed5345a561e5b7c7c46aa622aa8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/fldigi-olivia-core",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "source-root"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "9e6c5253466fbed5345a561e5b7c7c46aa622aa8"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "ae4d994f5e7415ee8820c267f8986654bc75c3d5"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/fldigi-olivia-core"
+        },
+        {
+          "name": "sbom:release-tags",
+          "value": "[\"v0.1.0\"]"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "type": "application",
+      "version": "9e6c5253466fbed5345a561e5b7c7c46aa622aa8"
+    },
+    "properties": [
+      {
+        "name": "sbom:scope",
+        "value": "Source repository inventory only; completeness is UNKNOWN. Syft inventories tracked source/package manifests. Gitlinks and declared vendored/model evidence are inspected at immutable pins. CMake declarations are conditional requirements, not resolved installations. This is NOT proof of operating-system packages, static-link closure, build-time resolution, or the contents of release binaries."
+      },
+      {
+        "name": "sbom:generation-status",
+        "value": "success"
+      },
+      {
+        "name": "sbom:generation-errors",
+        "value": "[]"
+      }
+    ],
+    "timestamp": "2026-11-02T16:50:40.891955+00:00",
+    "tools": {
+      "components": [
+        {
+          "author": "anchore",
+          "name": "syft",
+          "type": "application",
+          "version": "1.55.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:5bd6a9a3-aa42-4d36-a567-4ff11b4b5253",
+  "specVersion": "1.6",
+  "version": 1
+}
