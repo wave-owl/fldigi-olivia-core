@@ -13,7 +13,7 @@
           "content": "b7d316c4b006e55ed66569cf8daa75a663aa0189c7816ee9acbbb2719f03830a"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/fldigi-olivia-core/.source-input/.github/workflows/ci.yml",
+      "name": "tracked-source/.github/workflows/ci.yml",
       "type": "file"
     },
     {
@@ -28,7 +28,7 @@
           "content": "0a5a07a517c90bf8316c97c55c5662c8cb2175ea3f8d1a63b9c424a69a4b6d3b"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/fldigi-olivia-core/.source-input/dsp/.github/workflows/ci.yml",
+      "name": "tracked-source/dsp/.github/workflows/ci.yml",
       "type": "file"
     },
     {
